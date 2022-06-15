@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Request Consultation</title>
+</head>
+<body>
+    <header class="heading">
+        <img class="logo1" src="./logos/logo2.png" height="113" width="243">
+        <nav class="topnav">
+            <a href="home.html">Home</a>
+            <a href="cats.html">Cats</a>
+            <a href="dogs.html">Dogs</a>
+            <a href="smallanimals.html">Small Animals</a>
+            <a class="active" href="contact.html">Request Consultation</a>
+            <input type="text" placeholder="Search..">
+        </nav>
+    </header>
+    <section class="title">
+        <h2 class="pagetitle">Request Consultation</h2>
+    </section>
+    <article class="mainsummary">
+        <img class="mainimg" src="./images/ipad.jpg">
+
+            <h3 id="values">
+                Fill out the form below to request a consultation with on of our "Pexperts"
+            </h3>
+    </article>
+    <h1 class="formheading">Enter your Contact Information</h1>
+    <form class="contactform" method="get">
+        
+        <table>
+            <tr>            
+                <td class="label">
+                    <label for="fname">First Name: </label>
+                </td>
+                <td class="input">
+                    <input type="text" id="fname" name="fname">
+                </td>
+                <td class="divcolumn"></td>
+                <td class="label">
+                    <label for="petname">Pet's Name: </label>
+                </td>
+                <td class="input">
+                    <input type="text" id="petname" name="petname">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="lname">Last Name: </label>
+                </td>
+                <td class="input">                
+                    <input type="text" id="lname" name="lname">
+                </td>
+                <td class="divcolumn"></td>
+                <td class="label">
+                    <label for="type">Type of Pet: </label>
+                </td>
+                <td class="input">
+                    <select id="type" name="type" >
+                        <option value="" disabled selected>Select...</option>
+                        <option value="cat">Cat</option>
+                        <option value="dog">Dog</option>
+                        <option value="smallanimal">Small Animal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="phone">Phone: </label>
+                </td>
+                <td class="input">
+                    <input type="tel" id="phone" name="phone">
+                </td>
+                <td class="divcolumn"></td>
+                <td class="label">
+                    <label for="petage">Pet's Age: </label>
+                </td>
+                <td class="input">
+                    <input type="number" id="petage" name="petage">
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="email">Email Address: </label>
+                </td>
+                <td class="input">
+                    <input type="email" id="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="contactmethod">Preferred Contact Method:</label>
+                </td>
+                <td class="input">
+                    <select id="contactmethod" name="contactmethod">
+                        <option value="" disabled selected>Select...</option>
+                        <option value=email">Email</option>
+                        <option value="phone">Phone</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td class="label">
+                    <label for="contacttime">Best time to contact: </label>
+                </td>
+                <td class="input">
+                    <select id="contacttime" name="contacttime">
+                        <option value="" disabled selected>Select...</option>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                        <option value="weekends">Weekends Only</option>
+                    </select>
+                </td>
+                <td class="divcolumn"></td>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit" id="submit">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    <label for="timezone">Time Zone: </label>
+                </td>
+                <td class="input">
+                    <select id="timezone" name="timezone">
+                        <option value="" disabled selected>Select...</option>
+                        <option value="pst">Pacific</option>
+                        <option value="mst">Mountain</option>
+                        <option value="cst">Central</option>
+                        <option value="est">Eastern</option>
+                    </select>
+                </td>
+                <td class="divcolumn"></td>
+                <td></td>
+                <td>
+                    <input type="reset" value="Reset" id="reset">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+
+
+
+    <footer id="footer">
+        <h4>Copyright © 2022 - Paradigm Pet Professionals </h4>
+    </footer>
+</body>
+</html>
